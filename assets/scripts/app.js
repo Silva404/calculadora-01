@@ -1,13 +1,14 @@
 const defaultResult = 0;
-let currentResult = 0;
+let currentResult = defaultResult;
+// let currentResult;
 
 function add(num1, num2){
-  const result = num1 + num2;   
+  const result = num1 + num2;
   return result;
 }
 
-currentResult = add(4,2);
+currentResult = add(1,2);
 
-// let calculationDescription = ` (${defaultResult} + 10) / 2 * 15 - 7`;
+let calculationDescription = `(${defaultResult} + 10) * 3 / 2 -1`;
 
-outputResult(currentResult, calculationDescription);
+outputResult(currentResult, currentResult)
