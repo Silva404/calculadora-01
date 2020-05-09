@@ -3,77 +3,57 @@
 }
 
 html {
-  font-family: 'Roboto', open-sans;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 175%;
+  font-weight: 300;
+  line-height: 1.3;
 }
 
 body {
   margin: 0;
+  background: rgb(110, 184, 129);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-feature-settings: antialiased !important;  
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  background: #023d6d;
-  color: white;
-  padding: 1rem;
+.calculadora {
+  width: 400px;
+  height: 380px;
+  background: rgb(211, 210, 210);
+  margin: 3.5em auto;
+  font-size: 1.5em;
+  border-radius: 12px;
+}
+
+.calculator_display {
+  text-align: right;
+  font-size: 1.4em;
+  padding: 0 20px;
+  background: #222222;
+  color: #fff;
+  border-radius: 12px 12px 0 0;  
+}
+
+.calculator_keys {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(4, 1fr);  
+}
+
+button {
+  height: 60px;
+  font-size: 0.5em;
+}
+.calculator_keys > * {
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  width: 100%;
+  border: 0;
 }
 
-#results,
-#calculator {
-  margin: 2rem auto;
-  width: 40rem;
-  max-width: 90%;
-  border: 1px solid #023d6d;
-  border-radius: 10px;
-  padding: 1rem;
-  color: #023d6d;
+.equal  {
+  grid-column: 4/5;
+  grid-row: 2 / span 5;
+  padding: 5.78em 0;
+  background-image: linear-gradient(to bottom, #fe886a, #ff7033);
 }
 
-#results {
-  text-align: center;
-}
-
-#calculator input {
-  font: inherit;
-  font-size: 3rem;
-  border: 2px solid #023d6d;
-  width: 10rem;
-  padding: 0.15rem;
-  margin: auto;
-  display: block;
-  color: #023d6d;
-  text-align: center;
-}
-
-#calculator input:focus {
-  outline: none;
-}
-
-#calculator button {
-  font: inherit;
-  background: #023d6d;
-  color: white;
-  border: 1px solid #023d6d;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-#calculator button:focus {
-  outline: none;
-}
-
-#calculator button:hover,
-#calculator button:active {
-  background: #084f88;
-  border-color: #084f88;
-}
-
-#calc-actions button {
-  width: 4rem;
-}
-
-#calc-actions {
-  margin-top: 1rem;
-  text-align: center;
-}
