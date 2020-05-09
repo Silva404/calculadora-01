@@ -7,6 +7,7 @@ html {
   font-size: 175%;
   font-weight: 300;
   line-height: 1.3;
+  outline: none;
 }
 
 body {
@@ -20,18 +21,20 @@ body {
 .calculadora {
   width: 400px;
   height: 380px;
-  background: rgb(211, 210, 210);
+  background: rgb(161, 117, 206,0.5);
   margin: 3.5em auto;
   font-size: 1.5em;
   border-radius: 12px;
+  box-shadow: 1px 5px 50px rgb(90, 90, 90,1);
 }
 
 .calculator_display {
   text-align: right;
   font-size: 1.4em;
   padding: 0 20px;
-  background: #222222;
-  color: #fff;
+  /* background: #222222; */
+  background: #322B52;
+  color: rgb(200, 199, 209);
   border-radius: 12px 12px 0 0;  
 }
 
@@ -48,12 +51,14 @@ button {
 .calculator_keys > * {
   text-align: center;
   border: 0;
+  font-weight: bold;
+  color: rgb(69, 59, 80);
 }
 
 .equal  {
   grid-column: 4/5;
   grid-row: 2 / span 5;
   padding: 5.78em 0;
-  background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+  background-image: linear-gradient(to bottom, rgb(247, 184, 115,0.5), rgb(243, 125, 129,0.5));
 }
 
