@@ -13,13 +13,13 @@ html {
 * :focus {
   outline: none;
   opacity: 0.8;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 
 body {
   margin: 0;
-  background: rgb(110, 184, 129);
+  background: rgb(200, 214, 204);
   text-rendering: optimizeLegibility !important;
   -webkit-font-feature-settings: antialiased !important;  
   font-family: Arial, Helvetica, sans-serif;
